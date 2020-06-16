@@ -7,8 +7,9 @@ kata1Heading.append('Kata 1')
 mainElement.append(kata1Heading)
 
 let array1 = []
-let kata1 = 0
-while (kata1 < 20) {
+let kata1 = 1
+const limit = 20
+while (kata1 <= limit) {
     array1.push(kata1)
     kata1 += 1
 }
@@ -100,7 +101,7 @@ while (kata7 >= limit7) {
 mainElement.append(array7)
 
 const kata8Heading = document.createElement('h1')
-kata8Heading.append('kata 8')
+kata8Heading.append('Kata 8')
 mainElement.append(kata8Heading)
 
 let array8 = []
@@ -178,11 +179,11 @@ const kata14Heading = document.createElement('h1')
 kata14Heading.append('Kata 14')
 mainElement.append(kata14Heading)
 
-let square = sampleArray.map(Math.sqrt);
+let square = sampleArray.map(x => Math.pow(x, 2))
 
 mainElement.append(square)
 
-mainElement.append()
+
 ////kata 15
 const kata15Heading = document.createElement('h1')
 kata15Heading.append('Kata 15')
@@ -217,14 +218,11 @@ let lowestValue = Math.min.apply(null, sampleArray)
 mainElement.append(lowestValue)
 
 
-
-
 /////Kata 18
 const kata18Heading = document.createElement('h1')
 mainElement.append(kata18Heading)
 kata18Heading.append('kata 18')
 
 let highestValue = Math.max.apply(null, sampleArray)
-
 
 mainElement.append(highestValue)
